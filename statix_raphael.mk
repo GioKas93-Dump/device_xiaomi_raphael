@@ -15,14 +15,15 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
-# Inherit some common VoltageOS stuff.
-$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+# Inherit some common StatixOS stuff.
+$(call inherit-product, vendor/statix/config/common.mk)
+$(call inherit-product, vendor/statix/config/gsm.mk)
 
 # Official-ify
-VOLTAGE_BUILD_TYPE := OFFICIAL
+STATIX_BUILD_TYPE := UNOFFICIAL
 
 # Prebuilt Browser
-SMARTCOOKIEWEB := true
+#SMARTCOOKIEWEB := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 2160
@@ -31,7 +32,7 @@ TARGET_BOOT_ANIMATION_RES := 2160
 EXTRA_UDFPS_ANIMATIONS := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := voltage_raphael
+PRODUCT_NAME := statix_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 9T Pro
