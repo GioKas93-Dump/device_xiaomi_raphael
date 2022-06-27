@@ -13,9 +13,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_raphael.mk
+    $(LOCAL_DIR)/stag_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    voltage_raphael-user \
-    voltage_raphael-userdebug \
-    voltage_raphael-eng
+    stag_raphael-user \
+    stag_raphael-userdebug \
+    stag_raphael-eng
